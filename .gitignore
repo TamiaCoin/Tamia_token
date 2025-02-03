@@ -1,0 +1,27 @@
+# Solana build artifacts
+/target/
+test-ledger/
+
+# Node.js dependencies
+/node_modules/
+.yarn/
+
+# Log files
+*.log
+*.tmp
+
+# macOS specific files
+.DS_Store
+
+# Rust backup files
+**/*.rs.bk
+
+# Yarn lock files (optional)
+yarn.lock
+
+# Solana specific
+.anchor
+
+# Miscellaneous generated files
+*.swp
+
