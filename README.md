@@ -26,7 +26,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/Tamia_token.git
-cd Tamia_token
+cd Tamia_token```
 
 ## License  
 $TAMIA is an open-source project licensed under the MIT License.  
