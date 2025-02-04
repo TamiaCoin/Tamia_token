@@ -1,2 +1,33 @@
-# Tamia_token
-$TAMIA is a fun and innovative memecoin built on the Solana blockchain. This project aims to provide a simple yet effective way to create, mint, and distribute tokens through a decentralized ecosystem. The goal is to empower the community and bring joy to the crypto world, while experimenting with blockchain technology and the culture of memes.
+# $TAMIA
+
+# Tamia Token
+
+Tamia Token ($TAMIA) is a memecoin created on the Solana blockchain. The project allows for the creation of a fun, engaging, and easily accessible token, with the aim of building a strong community of supporters and participants. This token is built using the Anchor framework for Solana, which simplifies the development process and ensures the token operates smoothly.
+
+## Features
+
+- **SPL Token**: Built using the SPL standard, this token can be transferred, minted, and held in Solana wallets.
+- **Decentralized**: The token operates on the Solana blockchain, ensuring fast and secure transactions.
+- **Simple Minting**: Users can easily mint new tokens with the provided functions in the smart contract.
+- **Community-driven**: Tamia Token focuses on growing its user base, allowing for greater participation and interaction within the community.
+
+## Getting Started
+
+Follow these steps to get your own Tamia Token up and running on Solana.
+
+### Prerequisites
+
+- Install **Solana CLI** on your machine. [Installation Guide](https://docs.solana.com/cli/install-solana-cli-tools)
+- Install **Rust** and **Anchor** for smart contract development. [Rust Installation Guide](https://www.rust-lang.org/learn/get-started), [Anchor Installation Guide](https://project-serum.github.io/anchor/getting-started/installation.html)
+  
+### Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/Tamia_token.git
+cd Tamia_token
+
+## License  
+$TAMIA is an open-source project licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for more details.
