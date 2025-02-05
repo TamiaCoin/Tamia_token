@@ -1,8 +1,9 @@
-# $TAMIA
+<div align="center"><img src="https://github.com/user-attachments/assets/cc44133e-2b75-406a-8e20-70f0d99dceb7" alt="tamiacoin" width=900/></div>
 
-# Tamia Token
+# Tamia Token ($TAMIA) 
 
-Tamia Token ($TAMIA) is a memecoin created on the Solana blockchain. The project allows for the creation of a fun, engaging, and easily accessible token, with the aim of building a strong community of supporters and participants. This token is built using the Anchor framework for Solana, which simplifies the development process and ensures the token operates smoothly.
+
+TAMIA is a memecoin created on the Solana blockchain. The project allows for the creation of a fun, engaging, and easily accessible token, with the aim of building a strong community of supporters and participants. This token is built using the Anchor framework for Solana, which simplifies the development process and ensures the token operates smoothly.
 
 ## Features
 
