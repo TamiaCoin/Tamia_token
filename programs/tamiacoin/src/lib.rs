@@ -4,7 +4,7 @@ use anchor_spl::token::{self, Mint, Token, TokenAccount, MintTo};
 declare_id!("");  // program ID
 
 #[program]
-pub mod my_memecoin {
+pub mod tamia_coin {
     use super::*;
 
     // Function to initialize the token
