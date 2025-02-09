@@ -7,12 +7,21 @@ declare_id!("");  // program ID
 pub mod tamia_coin {
     use super::*;
 
-    // Function to initialize the token
-    pub fn initialize(ctx: Context<Initialize>, decimals: u8, total_supply: u64) -> Result<()> {
+    // Function to initialize the token and distribute supply
+    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         let mint = &mut ctx.accounts.mint;
-        mint.decimals = decimals;
-        mint.supply = total_supply;
-        Ok(())
+        mint.decimals = 9;
+        mint.supply = 100_000_000_000_000; // 100 Trillions
+
+        let cpi_accounts = MinTo {
+            mint: ctx.accounts.mint.to_account_info(),
+            to: ctx.accounts.owner_account.to_account_info(),
+            authority: ctx.accounts.authority.to_account_info(),
+        };
+        let cpi_program = ctx.accounts.token_program.to_account_info();
+        token::mint_to(CpiContext::new(cpi_program, cpi_accounts), mint.supply)?;
+
+        Ok(())  
     }
 
     // Function to "mint" (create) tokens and send them to a user
@@ -35,7 +44,11 @@ pub struct Initialize<'info> {
     pub mint: Account<'info, Mint>,
     #[account(mut)]
     pub user: Signer<'info>,
+    #[account(init, payer = user, token::mint = mint, token::authority = user)]
+    pub owner_account: Account<'info, TokenAccount>,
     pub system_program: Program<'info, System>,
+    pub token_program: Program<'info, Token>,
+    pub authority: Signer<'info>,
 }
 
 // Accounts needed to "mint" (create) tokens
