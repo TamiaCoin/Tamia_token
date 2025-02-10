@@ -9,4 +9,5 @@ pub const BURN_SUPPLY: u64 = (TOTAL_SUPPLY * 10) / 100; // 10%
 pub const OWNER_SUPPLY: u64 = (TOTAL_SUPPLY * 5) / 100; // 5%
 
 // Vesting (optional) - Time before tokens can be retrieved (in seconds)
+#[allow(dead_code)]
 pub const OWNER_VESTING_PERIOD: u64 = 31536000; // 1 year (365 days)

@@ -25,3 +25,5 @@ yarn.lock
 # Miscellaneous generated files
 *.swp
 
+# anchor file 
+Anchor.toml

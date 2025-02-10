@@ -4,5 +4,18 @@ members = [
 ]
 resolver = "2"
 
-[profile.release]
+[profile.dev]
+opt-level = 0
+debug = true
 overflow-checks = true
+incremental = false
+codegen-units = 1
+
+[profile.release]
+opt-level = "z"     # favor small binary size
+debug = false
+overflow-checks = true
+lto = "thin"        # better memory optimization without slowing down compilation too much
+codegen-units = 1
+incremental = false
+panic = "abort"     # avoiding complex panic management
