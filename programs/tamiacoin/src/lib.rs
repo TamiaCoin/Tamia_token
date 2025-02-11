@@ -6,7 +6,7 @@ use anchor_spl::token::{self, Mint, Token, TokenAccount, MintTo};
 use crate::distribution::*;
 
 
-declare_id!("11111111111111111111111111111111"); // program ID
+declare_id!("6LuDa36enHe3rgJbTYVQiCpnBDtRakDPkz46Yy7AhM2y"); // program ID
 
 #[program]
 pub mod tamia_coin {
@@ -18,7 +18,7 @@ pub mod tamia_coin {
         let authority = &ctx.accounts.authority.to_account_info();
         let token_program = &ctx.accounts.token_program.to_account_info();
         
-        // Mint initial uniquement pour le propriétaire (les autres seront ajoutés séparément)
+        // Initial mint only for owner (others will be added separately)
         mint_to_account(mint, &ctx.accounts.owner_account.to_account_info(), authority, token_program, OWNER_SUPPLY)?;
         
         Ok(())
