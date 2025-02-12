@@ -24,19 +24,14 @@ pub mod tamia_coin {
         Ok(())
     }
 
-    // Function to add other distribution accounts
-    pub fn add_distribution_accounts(ctx: Context<AddDistributionAccounts>) -> Result<()> {
+    // New feature: Add only one distribution account at a time
+    pub fn add_single_account(ctx: Context<AddSingleAccount>, amount: u64) -> Result<()> {
         let mint = &ctx.accounts.mint.to_account_info();
         let authority = &ctx.accounts.authority.to_account_info();
         let token_program = &ctx.accounts.token_program.to_account_info();
 
-        // Mint to the various distribution accounts
-        mint_to_account(mint, &ctx.accounts.liquidity_account.to_account_info(), authority, token_program, LIQUIDITY_SUPPLY)?;
-        mint_to_account(mint, &ctx.accounts.p2e_account.to_account_info(), authority, token_program, P2E_SUPPLY)?;
-        mint_to_account(mint, &ctx.accounts.marketing_account.to_account_info(), authority, token_program, MARKETING_SUPPLY)?;
-        mint_to_account(mint, &ctx.accounts.team_account.to_account_info(), authority, token_program, TEAM_SUPPLY)?;
-        mint_to_account(mint, &ctx.accounts.burn_account.to_account_info(), authority, token_program, BURN_SUPPLY)?;
-        
+        mint_to_account(mint, &ctx.accounts.token_account.to_account_info(), authority, token_program, amount)?;
+
         Ok(())
     }
 
@@ -71,29 +66,17 @@ pub struct Initialize<'info> {
 }
 
 // Account structure to add other distribution accounts
+// New structure to initialize ONLY one distribution account at a time
 #[derive(Accounts)]
-pub struct AddDistributionAccounts<'info> {
-    #[account(mut)]
-    pub user: Signer<'info>,
-    
+pub struct AddSingleAccount<'info> {
     #[account(mut)]
     pub mint: Account<'info, Mint>,
 
     #[account(init, payer = user, token::mint = mint, token::authority = user)]
-    pub liquidity_account: Account<'info, TokenAccount>,
-    
-    #[account(init, payer = user, token::mint = mint, token::authority = user)]
-    pub p2e_account: Account<'info, TokenAccount>,
-    
-    #[account(init, payer = user, token::mint = mint, token::authority = user)]
-    pub marketing_account: Account<'info, TokenAccount>,
+    pub token_account: Account<'info, TokenAccount>,
 
-    #[account(init, payer = user, token::mint = mint, token::authority = user)]
-    pub team_account: Account<'info, TokenAccount>,
-
-    #[account(init, payer = user, token::mint = mint, token::authority = user)]
-    pub burn_account: Account<'info, TokenAccount>,
-
+    #[account(mut)]
+    pub user: Signer<'info>,
     pub system_program: Program<'info, System>,
     pub token_program: Program<'info, Token>,
     pub authority: Signer<'info>,
