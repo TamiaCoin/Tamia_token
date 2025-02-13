@@ -27,3 +27,7 @@ yarn.lock
 
 # anchor file 
 Anchor.toml
+
+# logs file
+logs.txt
+tests/logs.txt
