@@ -6,7 +6,7 @@ use anchor_spl::token::{self, Mint, Token, TokenAccount, MintTo};
 use crate::distribution::*;
 
 
-declare_id!("6LuDa36enHe3rgJbTYVQiCpnBDtRakDPkz46Yy7AhM2y"); // program ID
+declare_id!("D4AzYeWHTRvhBnC65mmDyqVgKdJ3Gdtg4hJ5xVR3dBVN"); // program ID
 
 #[program]
 pub mod tamia_coin {
@@ -24,14 +24,23 @@ pub mod tamia_coin {
         Ok(())
     }
 
-    // New feature: Add only one distribution account at a time
-    pub fn add_single_account(ctx: Context<AddSingleAccount>, amount: u64) -> Result<()> {
+    // Add a specific distribution account with its defined amount
+    pub fn add_single_account(ctx: Context<AddSingleAccount>, account_type: u8) -> Result<()> {
         let mint = &ctx.accounts.mint.to_account_info();
         let authority = &ctx.accounts.authority.to_account_info();
         let token_program = &ctx.accounts.token_program.to_account_info();
-
+    
+        let amount = match account_type {
+            1 => LIQUIDITY_SUPPLY,
+            2 => P2E_SUPPLY,
+            3 => MARKETING_SUPPLY,
+            4 => TEAM_SUPPLY,
+            5 => BURN_SUPPLY,
+            _ => return Err(ErrorCode::InvalidAccountType.into()),
+        };
+    
         mint_to_account(mint, &ctx.accounts.token_account.to_account_info(), authority, token_program, amount)?;
-
+    
         Ok(())
     }
 
@@ -65,21 +74,24 @@ pub struct Initialize<'info> {
     pub authority: Signer<'info>,
 }
 
-// Account structure to add other distribution accounts
+
 // New structure to initialize ONLY one distribution account at a time
 #[derive(Accounts)]
 pub struct AddSingleAccount<'info> {
     #[account(mut)]
     pub mint: Account<'info, Mint>,
 
-    #[account(init, payer = user, token::mint = mint, token::authority = user)]
+    #[account(init, payer = authority, token::mint = mint, token::authority = user)]
     pub token_account: Account<'info, TokenAccount>,
 
     #[account(mut)]
     pub user: Signer<'info>,
+
+    #[account(mut)]  // Add authority as Signer
+    pub authority: Signer<'info>,  
+
     pub system_program: Program<'info, System>,
-    pub token_program: Program<'info, Token>,
-    pub authority: Signer<'info>,
+    pub token_program: Program<'info, Token>
 }
 
 /// Account structure for mounting tokens
@@ -110,4 +122,10 @@ fn mint_to_account<'info>(
     };
     token::mint_to(CpiContext::new(token_program.clone(), cpi_accounts), amount)?;
     Ok(())
+}
+
+#[error_code]
+pub enum ErrorCode {
+    #[msg("Invalid account type.")]
+    InvalidAccountType,
 }
