@@ -59,8 +59,7 @@ Replace `<TOKEN_ADDRESS>` with your actual token address.
 > Feel free to **fork this repository** and contribute.
 > Possible future features:
 > - **Additional utilities** (TBD by the community)
-> - **NFT integration**
-> - **Staking mechanisms**
+> - **Play2Earn** ($TAMIA game)
 
 <br>
 
