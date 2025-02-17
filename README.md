@@ -68,4 +68,4 @@ Replace `<TOKEN_ADDRESS>` with your actual token address.
 
 Tamia Token is an **open-source** project under the **MIT License.** See [LICENSE](https://github.com/TamiaCoin/Tamia_token/blob/main/LICENSE) for details.
 
-**Copyright (c) 2025 TAMIA Project**
+**Copyright (c) 2025 $TAMIA Project**
