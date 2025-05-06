@@ -66,6 +66,13 @@ Let’s build something legendary — together.
 
 <br>
 
+## 🔗 Ecosystem Links
+
+- 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/White_Paper)
+- 🎮 [Play-to-Earn Game Repository](https://github.com/TamiaCoin/Tamia_Play2Earn)
+- 🌐 [Official Website](https://tamia.club)
+- 🧑‍🤝‍🧑  Join the community: [Follow on X](https://twitter.com/TamiaCoin) and [Telegram](https://t.me/).
+
 ## 📝 License
 
 Tamia Token is released under the **MIT License.**<br> 
