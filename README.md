@@ -73,6 +73,8 @@ Let’s build something legendary — together.
 - 🌐 [Official Website](https://tamia.club)
 - 🧑‍🤝‍🧑  Join the community: [Follow on X](https://twitter.com/TamiaCoin) and [Telegram](https://t.me/).
 
+<br>
+
 ## 📝 License
 
 Tamia Token is released under the **MIT License.**<br> 
