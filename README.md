@@ -75,7 +75,7 @@ All proposals are reviewed with care and may be integrated if aligned with the p
 
 ## 🔗 Ecosystem Links
 
-- 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/White_Paper)
+- 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/WhitePaper)
 - 🎮 [Play-to-Earn Game Repository](https://github.com/TamiaCoin/Tamia_Play2Earn)
 - 🌐 [Official Website](https://tamia.club)
 - 💬 [Community Chat (Telegram)](https://t.me/TamiaCoinCommunity)
