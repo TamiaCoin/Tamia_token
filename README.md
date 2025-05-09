@@ -78,8 +78,8 @@ All proposals are reviewed with care and may be integrated if aligned with the p
 - 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/White_Paper)
 - 🎮 [Play-to-Earn Game Repository](https://github.com/TamiaCoin/Tamia_Play2Earn)
 - 🌐 [Official Website](https://tamia.club)
-- 💬 [Community Chat (Telegram)](t.me/TamiaCoinCommunity)
-- 📢 [Announcements Channel (Telegram)](t.me/TamiaCoin)
+- 💬 [Community Chat (Telegram)](https://t.me/TamiaCoinCommunity)
+- 📢 [Announcements Channel (Telegram)](https://t.me/TamiaCoin)
 - 🧑‍🤝‍🧑 [Follow the community on X](https://twitter.com/TamiaCoin)
 
 <br>
