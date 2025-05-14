@@ -3,6 +3,8 @@
 # Tamia_Token ($TAMIA) 
 ***The Memecoin Eater*** 🐿️🍽️🪙
 
+<div align=center>
+  
 ![Solana](https://img.shields.io/badge/Solana-Mainnet%20Ready-purple?logo=solana)
 ![Anchor](https://img.shields.io/badge/Built%20with-Anchor-blueviolet)
 ![License](https://img.shields.io/github/license/TamiaCoin/Tamia_token)
@@ -13,7 +15,7 @@
 ![Token Type](https://img.shields.io/badge/token-SPL-blueviolet)
 [![Docs](https://img.shields.io/badge/docs-whitepaper-white)](PDf_url)
 <!--[![Game Repo](https://img.shields.io/badge/game%20repo-Flappy%20Tamia-ff69b4)](URL_VERS_TON_REPO_PLAY2EARN)-->
-
+</div>
 **$TAMIA** is a next-gen memecoin deployed on the **Solana blockchain**, built for speed, simplicity, and fun. Powered by the **Anchor** framework, it offers a lightweight, community-first token experience — playful at its core, but backed by serious tech.
 Whether you're a builder, degenerate, or casual user, **$TAMIA** brings memecoin culture to life with a smooth and transparent token system, and sets the stage for future integrations like **Play-to-Earn mechanics**.
 <br><br>
