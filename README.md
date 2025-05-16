@@ -78,6 +78,9 @@ Let’s build something legendary — together.
 <br>
 
 ## ✍️ Contributions & Feedback
+
+<div align="center"><img src="https://github.com/user-attachments/assets/8553e53d-cbb3-43ca-a9ce-b79929d0a110" alt="tamiacoin community" width=400/></div>
+
 The **$TAMIA Token** smart contract is maintained by core contributors to ensure security, stability, and compliance with the project’s evolving needs. That said, **community-driven innovation is highly encouraged.** <br>
 ➡️ Open a [Discussions](https://github.com/TamiaCoin/Tamia_token/discussions) or submit and Issue to share your insights, report bugs, or suggest improvements.
 All proposals are reviewed with care and may be integrated if aligned with the project’s roadmap.
