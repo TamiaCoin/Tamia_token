@@ -1,6 +1,6 @@
 <div align="center"><img src="https://github.com/user-attachments/assets/605d52e0-dfb7-4096-ae0f-54990648bcf2" alt="tamiacoin" width=400/></div>
 
-# Tamia_Token ($TAMIA) 
+# Tamia_Token Smart Contract ($TAMIA) 
 ***The Memecoin Eater*** 🐿️🍽️🪙
 
 ![Solana](https://img.shields.io/badge/Solana-Mainnet%20Ready-purple?logo=solana)
@@ -90,7 +90,8 @@ All proposals are reviewed with care and may be integrated if aligned with the p
 ## 🔗 Ecosystem Links
 
 - 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/WhitePaper)
-- 🎮 [Play-to-Earn Game Repository](https://github.com/TamiaCoin/Tamia_Play2Earn)
+- 🎮📜 [$TAMIA Play-to-Earn Smart Contract](https://github.com/TamiaCoin/Tamia_Play2Earn)
+- 🐿️🎮 [Flappy Chipmunk Game](https://github.com/TamiaCoin/Flappy_Chipmunk)
 - 🌐 [Official Website](https://tamia.club)
 - 💬 [Community Chat (Telegram)](https://t.me/TamiaCoinCommunity)
 - 📢 [Announcements Channel (Telegram)](https://t.me/TamiaCoin)
