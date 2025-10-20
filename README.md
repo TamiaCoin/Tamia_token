@@ -1,42 +1,54 @@
 <div align="center"><img src="https://github.com/user-attachments/assets/605d52e0-dfb7-4096-ae0f-54990648bcf2" alt="tamiacoin" width=400/></div>
 
-# Tamia_Token ($TAMIA) 
+# Tamia_Token Smart Contract ($TAMIA) 
 ***The Memecoin Eater*** 🐿️🍽️🪙
 
-TAMIA is a memecoin created on the Solana blockchain. The project allows for the creation of a fun, engaging, and easily accessible token, with the aim of building a strong community of supporters and participants. This token is built using the Anchor framework for Solana, which simplifies the development process and ensures the token operates smoothly.
+![Solana](https://img.shields.io/badge/Solana-Mainnet%20Ready-purple?logo=solana)
+![Anchor](https://img.shields.io/badge/Built%20with-Anchor-blueviolet)
+![License](https://img.shields.io/github/license/TamiaCoin/Tamia_token)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
+![Contributions](https://img.shields.io/badge/PRs-Welcome-blue)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Language](https://img.shields.io/badge/language-Rust-red)
+![Token Type](https://img.shields.io/badge/token-SPL-blueviolet)
+[![Docs](https://img.shields.io/badge/docs-whitepaper-white)](PDf_url)
+<!--[![Game Repo](https://img.shields.io/badge/game%20repo-Flappy%20Tamia-ff69b4)](URL_VERS_TON_REPO_PLAY2EARN)-->
+
+**$TAMIA** is a next-gen memecoin deployed on the **Solana blockchain**, built for speed, simplicity, and fun. Powered by the **Anchor** framework, it offers a lightweight, community-first token experience — playful at its core, but backed by serious tech.
+Whether you're a builder, degenerate, or casual user, **$TAMIA** brings memecoin culture to life with a smooth and transparent token system, and sets the stage for future integrations like **Play-to-Earn mechanics**.
 <br><br>
 
-## 🚀 Features
+## 🚀 Key Features
 
-- **SPL Token**: Built using the SPL standard, this token can be transferred, minted, and held in Solana wallets.
-- **Decentralized**: The token operates on the Solana blockchain, ensuring fast and secure transactions.
-- **Simple Minting**: Users can easily mint new tokens with the provided functions in the smart contract.
-- **Community-driven**: Tamia Token focuses on growing its user base, allowing for greater participation and interaction within the community.
+- 🧬 **SPL Token Standard** — Fully compatible with Solana wallets, DEXs, and DeFi tools.
+- ⚡ **Ultra-Fast & Cheap** — Enjoy near-instant transactions and negligible gas fees.
+- 🔁 **Mintable & Transferable** — Easily manage supply and distribution.
+- 🤝 **Community-Led** — Built to empower holders and embrace viral, grassroots growth.
 <br><br> 
 
 >[!IMPORTANT]  
->## 📦 Installation & Deployment
+>## 🛠️ Getting Started
 >### 1️⃣ Install Dependencies
->Ensure you have the following installed:
+>Make sure the following tools are installed on your machine::
 >- **Solana CLI** → [Install Guide](https://docs.solana.com/cli/install-solana-cli-tools)
 >- **Rust** → [Install Guide](https://www.rust-lang.org/learn/get-started)
 >- **Anchor Framework** → [Install Guide](https://project-serum.github.io/anchor/getting->started/installation.html)
->### 2️⃣ Build the Token
+>### 2️⃣ Build the Project
 >```bash
 >anchor build
 >```
->### 3️⃣ Deploy to Solana's Devnet
+>### 3️⃣ Deploy to Devnet
 >```bash 
 >anchor deploy
 >```
->After deployment, your **program ID** will be displayed. Keep it safe!
+>Once deployed, your **Program ID** will be displayed. Store it securely!
 <br>
 
-## 💰 Minting Tokens
+## 💰 Token Minting Guide
 
-Once the token is deployed, you can create and mint tokens using Solana CLI.
+After deployment, you can mint and distribute your tokens via Solana CLI.
 
-### 1️⃣ Create a New Token
+### 1️⃣ Create a Token
 ```bash
 solana-tokens create-token
 ```
@@ -55,16 +67,41 @@ Replace `<TOKEN_ADDRESS>` with your actual token address.
 <br><br>
 
 >[!NOTE]
->## 🔧 Further Development
-> Feel free to **fork this repository** and contribute.
-> Possible future features:
-> - **Additional utilities** (TBD by the community)
-> - **Play2Earn** ($TAMIA game)
+>## 🧩 What’s Next?
+> This repo is open for contributions and forks. Planned community-led features include:
+> - 🕹️ **Play-to-Earn mini-game** (Flappy Tamia)
+> - 📈 New utilities and integrations
+> - 🔥 Community-driven burns and events
+
+Let’s build something legendary — together.
+
+<br>
+
+## ✍️ Contributions & Feedback
+
+<div align="center"><img src="https://github.com/user-attachments/assets/8553e53d-cbb3-43ca-a9ce-b79929d0a110" alt="tamiacoin community" width=400/></div>
+
+The **$TAMIA Token** smart contract is maintained by core contributors to ensure security, stability, and compliance with the project’s evolving needs. That said, **community-driven innovation is highly encouraged.** <br>
+➡️ Open a [Discussions](https://github.com/TamiaCoin/Tamia_token/discussions) or submit and Issue to share your insights, report bugs, or suggest improvements.
+All proposals are reviewed with care and may be integrated if aligned with the project’s roadmap.
+
+<br>
+
+## 🔗 Ecosystem Links
+
+- 📄 [$TAMIA White Paper](https://github.com/TamiaCoin/WhitePaper)
+- 🎮📜 [$TAMIA Play-to-Earn Smart Contract](https://github.com/TamiaCoin/Tamia_Play2Earn)
+- 🐿️🎮 [Flappy Chipmunk Game](https://github.com/TamiaCoin/Flappy_Chipmunk)
+- 🌐 [Official Website](https://tamia.club)
+- 💬 [Community Chat (Telegram)](https://t.me/TamiaCoinCommunity)
+- 📢 [Announcements Channel (Telegram)](https://t.me/TamiaCoin)
+- 🐦 [Follow the community on X](https://twitter.com/TamiaCoin)
 
 <br>
 
 ## 📝 License
 
-Tamia Token is an **open-source** project under the **MIT License.** See [LICENSE](https://github.com/TamiaCoin/Tamia_token/blob/main/LICENSE) for details.
+Tamia Token is released under the **MIT License.**<br> 
+See [LICENSE](https://github.com/TamiaCoin/Tamia_token/blob/main/LICENSE) for details.
 
-**Copyright (c) 2025 $TAMIA Project**
+**© 2025 $TAMIA Project**
