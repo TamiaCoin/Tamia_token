@@ -18,10 +18,3 @@ anchor-debug = []
 no-idl = []
 no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
-
-[profile.release]
-opt-level = "z"        # Minimize binary size
-lto = true             # Link-time optimization
-codegen-units = 1      # Combine everything into one block
-panic = "abort"        # No unnecessary stack trace
-strip = true           # Remove debug symbols
